@@ -1,0 +1,27 @@
+# query Country($code:ID!){
+#   country(code:$code){
+#       code
+#       name
+#       emoji
+#       nameWithEmoji @client
+#       native
+#       phone
+#       continent{
+#         name
+#       }
+#       capital
+#       currency
+#       languages{
+#         name
+#       }
+#       states{
+#         name
+#       }
+#   }
+# }
+
+query Country($code:ID!){
+  country(code:$code){
+    ...RegularCountry
+  }
+}

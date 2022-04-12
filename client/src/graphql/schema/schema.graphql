@@ -1,0 +1,6 @@
+extend type Country{
+    nameWithEmoji:String!
+}
+extend type Countries{
+    nameWithEmoji:String!
+}

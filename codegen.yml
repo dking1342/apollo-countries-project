@@ -1,0 +1,12 @@
+overwrite: true
+schema: "https://countries.trevorblades.com/"
+documents: "my-app/src/graphql/**/*.graphql"
+generates:
+  my-app/src/generated/graphql.tsx:
+    schema: my-app/src/graphql/schema/schema.graphql
+    config: true
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+  

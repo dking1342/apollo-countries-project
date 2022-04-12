@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@graphql-codegen/cli": "^2.6.2",
+    "graphql": "^16.3.0",
+    "graphql-codegen-typescript": "^0.18.0-alpha.b1641564",
+    "graphql-codegen-typescript-template": "^0.18.2",
+    "graphql-tag": "^2.12.6",
+    "ts-invariant": "^0.9.4",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.6.2",
+    "@graphql-codegen/introspection": "2.1.1",
+    "@graphql-codegen/typescript": "^2.4.8",
+    "@graphql-codegen/typescript-document-nodes": "2.2.8",
+    "@graphql-codegen/typescript-graphql-files-modules": "2.1.1",
+    "@graphql-codegen/typescript-operations": "2.3.5",
+    "@graphql-codegen/typescript-react-apollo": "3.2.11",
+    "@types/graphql": "^14.5.0"
+  },
+  "scripts": {
+    "generate": "graphql-codegen --config codegen.yml"
+  }
+}

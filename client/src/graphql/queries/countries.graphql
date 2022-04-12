@@ -1,0 +1,27 @@
+# query Countries{
+#     countries{
+#       code
+#       name
+#       emoji
+#       nameWithEmoji @client
+#       native
+#       phone
+#       continent{
+#         name
+#       }
+#       capital
+#       currency
+#       languages{
+#         name
+#       }
+#       states{
+#         name
+#       }
+#     }
+# }
+
+query Countries{
+    countries{
+        ...RegularCountry
+    }
+}
